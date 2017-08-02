@@ -1,6 +1,6 @@
 # TF demo source code
 
-1. unzip resnet50.tar.gz
+1. unzip resnet50.tar.gz (in current directory)
 2. python forward.py
 3. check the output -> minivan
 
