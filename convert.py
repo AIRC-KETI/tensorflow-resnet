@@ -4,6 +4,7 @@ import sys
 import re
 import numpy as np
 import tensorflow as tf
+import scipy.misc
 import skimage.io
 
 import resnet
@@ -14,7 +15,7 @@ from synset import *
 # returns image of shape [224, 224, 3]
 # [height, width, depth]
 def load_image(path, size=224):
-    img = skimage.io.imread(path)
+    img = scipy.misc.imread(path, mode='RGB')
     short_edge = min(img.shape[:2])
     yy = int((img.shape[0] - short_edge) / 2)
     xx = int((img.shape[1] - short_edge) / 2)

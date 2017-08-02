@@ -5,6 +5,7 @@ def inference(filename):
     layers = 50
     
     img = load_image(filename)
+    print(img.shape)
     
     sess = tf.Session()
     
@@ -30,7 +31,7 @@ def inference(filename):
     return print_prob(prob[0])
 
 def main():
-    inference("data/cat.jpg")
+    inference("data/car.png")
 
 if __name__ == "__main__":
     main()
