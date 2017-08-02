@@ -1,3 +1,18 @@
+# TF demo source code
+
+1. unzip resnet50.tar.gz
+2. python forward.py
+3. check the output -> minivan
+
+## function
+
+> inference(filename) {in forward.py}
+
+
+* input: image filename (string)
+* return: classification result (string)
+
+
 # ResNet in TensorFlow
 
 Implemenation of [Deep Residual Learning for Image
