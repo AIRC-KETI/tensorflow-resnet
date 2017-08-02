@@ -4,6 +4,9 @@
 2. python forward.py
 3. check the output -> minivan
 
+<img src="screen.png">
+
+
 ## function
 
 > inference(filename) {in forward.py}
